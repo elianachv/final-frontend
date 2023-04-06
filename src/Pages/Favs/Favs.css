@@ -1,0 +1,18 @@
+.favs {
+  padding-top: 30px;
+}
+.favs__grid {
+  min-height: calc(100vh - 190px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  flex-wrap: wrap;
+  margin: auto;
+  margin-bottom: 0;
+}
+
+.favs-dark {
+  background: var(--darkColor);
+  color: var(--lightColor);
+}

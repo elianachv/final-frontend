@@ -1,0 +1,23 @@
+.detail {
+  padding-top: 30px;
+  min-height: calc(100vh - 155px);
+}
+
+.detail-dark {
+  background: var(--darkColor);
+  color: var(--lightColor);
+}
+
+.detail-dark a {
+  color: var(--lightColor);
+}
+
+.detail-table {
+  width: 95%;
+  margin: auto;
+}
+
+h1,
+h2 {
+  text-align: center;
+}

@@ -1,0 +1,8 @@
+export const globalActionTypes = {
+  LIGHT_THEME: "LIGHT_THEME",
+  DARK_THEME: "DARK_THEME",
+  ADD_FAV: "ADD_FAV",
+  DELETE_FAV: "DELETE_FAV",
+  RESET_FAVS: "RESET_FAVS",
+  GET_DENTISTS: "GET_DENTISTS",
+};

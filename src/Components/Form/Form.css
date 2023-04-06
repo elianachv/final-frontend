@@ -1,0 +1,38 @@
+.form,
+form {
+  border: solid 3px blue;
+}
+
+input,
+textarea {
+  min-height: 30px;
+  border: gray solid 2px;
+  border-radius: 3px;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+form textarea {
+  min-height: 100px;
+}
+
+form button {
+  border-radius: 5px;
+  border: none;
+  min-height: 30px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #1e90ff;
+}
+
+
+.request-state {
+  display: none;
+}
+
+.request-state.visible {
+  display: inline;
+}
+

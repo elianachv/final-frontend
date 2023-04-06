@@ -1,0 +1,19 @@
+.contact {
+  display: block;
+  padding-top: 30px;
+  min-height: calc(100vh - 155px);
+} 
+
+.contact-dark {
+  background: var(--darkColor);
+  color: var(--lightColor);
+}
+
+.contact-dark a {
+  color: var(--lightColor);
+}
+
+p {
+  text-align: center;
+}
+

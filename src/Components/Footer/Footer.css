@@ -1,0 +1,24 @@
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 15px;
+  background: var(--complementaryColor);
+  width: 100%;
+  margin: 0;
+}
+
+.footer__sponsor img {
+  height: 30px;
+}
+.footer__author,
+.footer__sponsor {
+  display: flex;
+  font-weight: 400;
+  color: var(--lightColor);
+}
+
+.footer__author p,
+.footer__sponsor p {
+  margin: 0px 0px;
+}

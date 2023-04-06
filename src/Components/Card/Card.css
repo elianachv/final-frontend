@@ -1,0 +1,39 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  border: solid 2px grey;
+  width: 300px;
+  font-size: 20px;
+  position: relative;
+  margin: 10px;
+  background: var(--lightColor);
+}
+
+.card img {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.card p, h4 {
+  margin: 10px 0px;
+}
+
+.card-id {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.card .favButton {
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+.card .favButton:hover {
+  background-color: #1E90FF	
+}

@@ -1,0 +1,62 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  width: 100%;
+  padding: 0 70px;
+  position: sticky;
+  top: 0;
+  border-bottom: solid  var(--complementaryColor) 1px;
+  z-index: 10;
+}
+
+nav button {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  border: 2px solid;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.nav__logo img {
+  width: 200px;
+}
+
+.nav__menu {
+  font-size: 20px;
+}
+
+.nav__menu a {
+  margin: 0px 20px;
+  font-weight: 600;
+}
+
+.nav__menu a:hover,
+nav a.nav__menu-active {
+  color:  var(--complementaryColor);
+}
+
+.nav-light {
+  background: var(--lightColor);
+  color: var(--darkColor);
+}
+
+.nav-light button {
+  background: var(--darkColor);
+}
+
+.nav-dark {
+  background: var(--darkColor);
+  color: var(--lightColor);
+}
+
+.nav-dark a {
+  color: var(--lightColor);
+}
+
+.nav-dark button {
+  background: var(--lightColor);
+}
