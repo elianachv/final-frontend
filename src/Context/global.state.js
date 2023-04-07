@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { useReducer, useMemo } from "react";
 import { themes, apiUrl } from "../Constants/context";
 import GlobalContext from "./global.context";
@@ -37,7 +38,7 @@ const GlobalState = ({ children }) => {
       const dentist = await axios.get(`${apiUrl}/users/${id}`);
       if (dentist.data) {
         dispatch({ type: actions.ADD_FAV, payload: dentist.data });
-        alert(`Dentista con id ${id} agregado a favoritos`);
+        alert(`Dentist with id ${id} added to favorites`);
       }
     }
   };
@@ -45,35 +46,27 @@ const GlobalState = ({ children }) => {
   const deleteFav = async (id) => {
     const dentist = await axios.get(`${apiUrl}/users/${id}`);
     dispatch({ type: actions.DELETE_FAV, payload: dentist.data });
-    //alert(`Dentista con id ${id} eliminado de favoritos`);
   };
 
   const resetFavs = () => {
     dispatch({ type: actions.RESET_FAVS });
   };
 
-   const cache = useMemo(
-    () => ({state }),
-    [state]
+  const cache = useMemo(
+    () => ({
+      ...state,
+      getDentists,
+      setLightTheme,
+      setDarkTheme,
+      addFav,
+      deleteFav,
+      resetFavs,
+    }),
+    [state, dispatch]
   );
 
   return (
-    <GlobalContext.Provider
-      value={{
-        cache,
-        theme: state.theme,
-        dentists: state.dentists,
-        favs: state.favs,
-        getDentists,
-        setLightTheme,
-        setDarkTheme,
-        addFav,
-        deleteFav,
-        resetFavs,
-      }}
-    >
-      {children}
-    </GlobalContext.Provider>
+    <GlobalContext.Provider value={cache}>{children}</GlobalContext.Provider>
   );
 };
 

@@ -1,0 +1,20 @@
+.notFound {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 145px);
+  font-size: 30px;
+}
+
+.notFound-dark {
+  background: var(--darkColor);
+  color: var(--lightColor);
+}
+
+p.warning {
+  font-size: 50px;
+
+  color: var(--complementaryColor);
+  font-weight: 600;
+}

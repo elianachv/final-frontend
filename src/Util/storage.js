@@ -1,5 +1,4 @@
 export const getStorageFavs = () => {
-  console.log("GET STORAGE FVAS");
   const localData = localStorage.getItem("favs");
   let localFavs = [];
   if (localData) {

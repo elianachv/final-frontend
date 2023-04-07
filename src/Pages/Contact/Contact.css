@@ -1,7 +1,7 @@
 .contact {
-  display: block;
   padding-top: 30px;
   min-height: calc(100vh - 155px);
+ position: relative;
 } 
 
 .contact-dark {

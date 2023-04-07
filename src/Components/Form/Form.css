@@ -1,6 +1,13 @@
-.form,
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
 form {
-  border: solid 3px blue;
+  margin: 20px auto;
+  height: fit-content;
 }
 
 input,
@@ -13,7 +20,7 @@ textarea {
 }
 
 form textarea {
-  min-height: 100px;
+  min-height: 50px;
 }
 
 form button {
@@ -27,12 +34,11 @@ form button:hover {
   background: #1e90ff;
 }
 
-
 .request-state {
   display: none;
+  font-size: 20px;
 }
 
 .request-state.visible {
   display: inline;
 }
-

@@ -10,7 +10,7 @@ const Detail = () => {
   const [dentist, setDentist] = useState({});
   const params = useParams();
   const { theme } = useContext(GlobalContext);
-  
+
   useEffect(() => {
     axios.get(`${apiUrl}/users/${params.id}`).then((data) => {
       setDentist(data.data);
@@ -23,7 +23,7 @@ const Detail = () => {
       <br />
       <h2>{dentist.name}</h2>
       <br />
-      <table class="detail-table">
+      <table className="detail-table">
         <thead>
           <tr>
             <th>Username</th>
@@ -51,7 +51,7 @@ const Detail = () => {
         </tbody>
       </table>
 
-        </div>
+    </div>
   );
 };
 

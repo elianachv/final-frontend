@@ -7,6 +7,7 @@ import Contact from "./Pages/Contact/Contact";
 import Favs from "./Pages/Favs/Favs";
 import GlobalState from "./Context/global.state";
 import "./Css/Global.css";
+import NotFound from "./Pages/NotFound/NotFound";
 
 function App() {
   return (
@@ -18,6 +19,8 @@ function App() {
             <Route path="/dentist/:id" element={<Detail />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/favs" element={<Favs />} />
+            <Route path="*" element={<NotFound />} />
+
           </Routes>
           <Footer />
       </BrowserRouter>

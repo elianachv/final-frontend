@@ -1,5 +1,5 @@
 import { useState } from "react";
-//import "./Form.css";
+import "./Form.css";
 
 const Form = () => {
   const [request, setRequest] = useState({
@@ -21,23 +21,17 @@ const Form = () => {
   };
 
   const validateRequest = () => {
-    console.log("request", request);
     if (
       request.name.length > 0 &&
       request.email.includes("@") &&
       request.question.length > 0
     ) {
-      console.log("OK request");
       return true;
     }
-    console.log("fail request");
-
     return false;
   };
 
   const sendRequest = (e) => {
-    setResult(false);
-
     e.preventDefault();
     if (validateRequest()) {
       setOk(true);
@@ -45,7 +39,6 @@ const Form = () => {
       setOk(false);
     }
 
-    console.log("OK", ok);
     setResult(true);
   };
 
@@ -72,6 +65,8 @@ const Form = () => {
           type="text"
           placeholder="Question"
           onChange={handleFormChange}
+          rows="7"
+          cols="50"
         />
         <button>Send</button>
       </form>
